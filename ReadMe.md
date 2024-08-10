@@ -23,6 +23,9 @@ trainable parameters and computational costs. Additionally, model extension expe
 
 
 ## Model train/eval
+- Patch per datasets
+You can get the data set you need for training from the links below, and use the utils toolkit to capture image patches, 
+as well as get edge maps and mask maps. With all this ready, 
 - datasets referenced in this paper
   - [(H)DIBCO](https://vc.ee.duth.gr/dibco2019/)
   - [Label](https://www.dropbox.com/sh/gqqugvclzltfldt/AACNELpHwTW-1bHLZzipxQWja?dl=0)
@@ -33,9 +36,7 @@ trainable parameters and computational costs. Additionally, model extension expe
   - [CHB](https://pan.baidu.com/s/1ymF08smuRhTo69dG_7gYUw?pwd=h4fu)(This is a dataset of image binarization of degenerate documents in ancient Chinese in Huizhou for readers to experiment)
   - [S-MS](http://tc11.cvc.uab.es/datasets/SMADI_1)
   - [LRDE-DBD](https://www.lrde.epita.fr/dload/olena/datasets/dbd/1.0/)
- - Patch per datasets
-You can get the data set you need for training from the links below, and use the utils toolkit to capture image patches, 
-as well as get edge maps and mask maps. With all this ready, 
+
 you can run the training script (train.py).
  ```bash
  python3 crop.py
