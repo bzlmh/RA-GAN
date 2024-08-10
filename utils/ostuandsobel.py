@@ -5,36 +5,36 @@ from PIL import Image
 
 def get_otsu(img):
     """
-    对图像应用Otsu二值化。
+    Apply Otsu's thresholding to an image.
 
-    参数:
-    img (PIL.Image): 输入图像
+    Parameters:
+    img (PIL.Image): Input image
 
-    返回:
-    PIL.Image: Otsu二值化后的图像
+    Returns:
+    PIL.Image: Image after Otsu's thresholding
     """
-    img_gray = img.convert('L')  # 转换为灰度图
-    img_gray_np = np.asarray(img_gray).astype(np.uint8)  # 转换为numpy数组
-    _, th2 = cv2.threshold(img_gray_np, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)  # 应用Otsu二值化
-    return Image.fromarray(th2)  # 转换回PIL图像
+    img_gray = img.convert('L')  # Convert to grayscale
+    img_gray_np = np.asarray(img_gray).astype(np.uint8)  # Convert to numpy array
+    _, th2 = cv2.threshold(img_gray_np, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)  # Apply Otsu's thresholding
+    return Image.fromarray(th2)  # Convert back to PIL image
 
-# 文件夹路径
-img_folder = "../results/A4/c16"
-otsu_folder = "../results/A4/c16"
+# Folder paths
+img_folder = "../results/A4/c16/"
+otsu_folder = "../results/A4/c16/"
 
-# 创建otsu文件夹，如果不存在
+# Create otsu_folder if it does not exist
 os.makedirs(otsu_folder, exist_ok=True)
 
-# 遍历img文件夹中的所有文件
+# Process each file in img_folder
 for filename in os.listdir(img_folder):
-    img_path = os.path.join(img_folder, filename)  # 完整图像路径
-    img = Image.open(img_path)  # 打开图像
+    img_path = os.path.join(img_folder, filename)  # Full path to the image
+    img = Image.open(img_path)  # Open the image
 
-    # 获取Otsu二值化图像
+    # Get Otsu binary image
     otsu_img = get_otsu(img)
 
-    # 保存Otsu二值化图像
-    otsu_save_path = os.path.join(otsu_folder, filename)  # 生成保存路径
-    otsu_img.save(otsu_save_path)  # 保存图像
+    # Save the Otsu binary image
+    otsu_save_path = os.path.join(otsu_folder, filename)  # Generate save path
+    otsu_img.save(otsu_save_path)  # Save the image
 
     print(f"Otsu image saved: {otsu_save_path}")
