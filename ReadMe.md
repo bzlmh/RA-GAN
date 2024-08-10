@@ -33,7 +33,7 @@ as well as get edge maps and mask maps. With all this ready,
   - [Bickly-diary](https://github.com/vqnhat/DSN-Binarization/files/2793688/original_gt_labeled.zip)
   - [PLM](http://amadi.univ-lr.fr/ICFHR2016_Contest/index.php/download-123)
 - other datasets
-  - [CHB](https://pan.baidu.com/s/1ymF08smuRhTo69dG_7gYUw?pwd=h4fu)(This is a dataset of image binarization of degenerate documents in ancient Chinese in Huizhou for readers to experiment)
+  - [CHB](https://pan.baidu.com/s/1ymF08smuRhTo69dG_7gYUw?pwd=h4fu) (This is a dataset of image binarization of degenerate documents in ancient Chinese in Huizhou for readers to experiment)
   - [S-MS](http://tc11.cvc.uab.es/datasets/SMADI_1)
   - [LRDE-DBD](https://www.lrde.epita.fr/dload/olena/datasets/dbd/1.0/)
 
