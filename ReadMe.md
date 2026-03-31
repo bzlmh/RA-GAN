@@ -3,7 +3,7 @@
 
 ## Description
 This is the official implementation for our paper [RA-GAN: Region-Adaptive GAN for Binarization  on Degraded Document Image]. 
-We have submitted our paper for publication and it is under review. The source codes will be updated here once the paper is accepted.
+The paper has been accepted at Knowledge-Based Systems✅
 
 ## Abstract
 Binarization is a crucial pre-processing step for the visual analysis of degraded document images, which usually possess features like bleeding, stains, holes, and creases. 
@@ -12,7 +12,7 @@ However, two critical problems remain to be investigated: (1) the inability to a
 To address these issues, this paper proposes an image binarization method called RA-GAN, which can accurately locate degraded regions and perform fine-grained modeling. 
 Specifically, RA-GAN comprises three main modules: the Gradient Gated Convolution (GGC) module, the Guided Attention (GA) module, and the Gated Feature Pyramid (GFP) module. 
 The GGC module captures pixel mutation information from the neighborhood using a locally modulated convolution kernel and employs a gating mechanism to activate global information for adaptive supplementation, and the GA module identifies degraded regions in both spatial and channel dimensions.
-Furthermore, the GFP module effectively restores the learned information using its unique structure. Comprehensive evaluations on five degraded document image datasets demonstrate that RA-GAN outperforms state-of-the-art methods across all metrics, with the lowest number of 
+Furthermore, the GFP module effectively restores the learned information using its unique structure. Comprehensive evaluations on five degraded document image datasets demonstrate that RA-GAN outperforms state-of-the-art methods with the lowest number of 
 trainable parameters and computational costs. Additionally, model extension experiments and ablation studies further validate RA-GAN’s effectiveness and potential for future development.
 
 ## Models
@@ -56,4 +56,3 @@ python3 train.py
 ```bash
 python3 test.py
 ```
-
