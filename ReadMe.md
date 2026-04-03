@@ -64,7 +64,7 @@ python3 test.py
 If you find this work helpful, please cite our paper:
 
 ```bibtex
-@article{liu2026ra,
+@article{liu2026ragan,
   title     = {RA-GAN: Region-Adaptive GAN for Binarization on Degraded Document Images},
   author    = {Liu, Menghui and Yu, Lang and Qin, Yiming and Wang, Guanghui and Shen, Lingfeng},
   journal   = {Knowledge-Based Systems},
