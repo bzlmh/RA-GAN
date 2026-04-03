@@ -57,7 +57,7 @@ python3 train.py
 python3 test.py
 ```
 
-## 📖 Citation
+## Citation
 
 <a name="citation"></a>
 
